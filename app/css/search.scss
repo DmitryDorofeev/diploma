@@ -1,0 +1,33 @@
+.search {
+  position: relative;
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #9d9d9d;
+    border-radius: 3px;
+    font-size: 18px;
+    padding-right: 70px;
+
+    &:focus {
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: $primary-color;
+    color: $secondary-color;
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+}

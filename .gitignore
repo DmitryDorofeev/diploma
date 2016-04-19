@@ -1,0 +1,13 @@
+build/
+.idea
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+build/Release
+node_modules
+.webpack.json

@@ -1,0 +1,26 @@
+$nav-height: 60px;
+
+.nav {
+  height: $nav-height;
+  background: $secondary-color;
+
+  &__title {
+    display: inline-block;
+    width: 25%;
+    line-height: $nav-height;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    user-select: none;
+    cursor: pointer;
+    font-size: 22px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__search {
+    display: inline-block;
+  }
+}
