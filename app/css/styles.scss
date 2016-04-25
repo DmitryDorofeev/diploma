@@ -1,4 +1,9 @@
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
 @import "vars";
 @import "nav";
 @import "content";
@@ -6,3 +11,5 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "sidebar";
 @import "common";
 @import "tree-view";
+@import "user";
+@import "list";

@@ -1,0 +1,58 @@
+.user {
+  display: inline-block;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 20px;
+  user-select: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  &__name {
+    display: inline-block;
+    line-height: $nav-height;
+    vertical-align: top;
+    user-select: none;
+  }
+
+  &__avatar {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    line-height: $nav-height;
+    margin: 9px 10px 0 0;
+  }
+
+  &:hover {
+    background-color: rgba(0,0,0,.02);
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    width: 200px;
+    padding: 5px 0;
+    border: 1px solid #f0f0f0;
+    background-color: #ffffff;
+    right: 10px;
+    border-radius: 3px;
+    text-align: center;
+
+    &_expanded {
+      display: block;
+    }
+  }
+
+  &__menu-item {
+    padding: 10px;
+    border-bottom: 1px solid $secondary-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &_last {
+      border: none;
+    }
+  }
+}

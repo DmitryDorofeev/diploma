@@ -1,10 +1,18 @@
 .tree-view {
-  
+  padding: 10px;
+
   &__title {
     font-family: Helvetica, sans-serif;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+  }
+
+  &__element {
+
   }
   
   &__childs {
-    padding-left: 10px;
+
   }
 }

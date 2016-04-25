@@ -1,14 +1,16 @@
 import {Component} from 'angular2/core';
+import {List} from './List';
+import {Device} from '../models';
 
 @Component({
   selector: 'content',
-  template: `
+  directives: [List],
+  template: (`
     <div class="content">
-         RKK Energiya
+         <list [items]="items"></list>
     </div>
-  `
+`)
 })
 export class Content {
-  constructor() {
-  }
+  items: Device[] = [{title: 'Item 1'}, {title: 'Item 2'}];
 }

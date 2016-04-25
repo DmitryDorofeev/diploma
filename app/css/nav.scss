@@ -2,7 +2,8 @@ $nav-height: 60px;
 
 .nav {
   height: $nav-height;
-  background: $secondary-color;
+  background: #fff;
+  overflow: hidden;
 
   &__title {
     display: inline-block;
@@ -22,5 +23,11 @@ $nav-height: 60px;
 
   &__search {
     display: inline-block;
+    width: 500px;
+  }
+
+  &__user {
+    display: inline-block;
+    float: right;
   }
 }

@@ -10,14 +10,14 @@ interface Node {
     selector: 'element',
     inputs: ['node'],
     directives: [Element],
-    template: `
+    template: (`
         <div class="tree-view__element">
             <div class="tree-view__title">{{ node.title }}</div>
             <div class="tree-view__childs" *ngFor="#child of node.childs">
                 <element [node]="child"></element>
             </div>
         </div>
-    `
+    `)
 })
 class Element {
     node: Node;
@@ -26,11 +26,11 @@ class Element {
 @Component({
     selector: 'tree-view',
     directives: [Element],
-    template: `
-        <div>
+    template: (`
+        <div class="tree-view">
             <element [node]="root"></element>
         </div>
-    `
+    `)
 })
 export class TreeView {
     root: Node;
@@ -43,7 +43,13 @@ export class TreeView {
                 {
                     title: 'Город Королёв',
                     id: 2,
-                    childs: []
+                    childs: [
+                        {
+                            title: 'Город Хуелёв',
+                            id: 7,
+                            childs: []
+                        }
+                    ]
                 },
                 {
                     title: 'Город Хуелёв',
@@ -51,6 +57,6 @@ export class TreeView {
                     childs: []
                 }
             ]
-        }
+        };
     }
 }

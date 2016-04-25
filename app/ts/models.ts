@@ -1,5 +1,10 @@
 import { uuid } from './util/uuid';
 
+export interface Device {
+  title: string;
+  location?: number;
+}
+
 export class User {
   id: string;
 

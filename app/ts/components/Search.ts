@@ -3,12 +3,14 @@ import {SearchService} from '../services/SearchService';
 
 @Component({
     selector: 'search',
-    template: `
+    template: (`
         <form action="" class="search" (submit)="onSubmit()">
             <input type="search" [(ngModel)]="value" name="search" class="search__input">
-            <button type="submit" class="search__button">Search</button>
+            <button type="submit" class="search__button">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
         </form>
-    `
+    `)
 })
 export class Search {
     value: string;
